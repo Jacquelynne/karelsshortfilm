@@ -5,18 +5,18 @@ from simpleimage import SimpleImage
 import random
 import math
 
-MEHRAN = 'images/Our players/mehran.png'
-MEHRANLARGE = 'images/Our players/mehransquare.png'
-CHRIS = 'images/Our players/chrisP.png'
-KAREL = 'images/Our players/karel.png'
-PYTHON = 'images/Our players/python.jpg'
-BEEPER = 'images/This n That/beeper.png'
+MEHRAN = 'images/Ourplayers/mehran.png'
+MEHRANLARGE = 'images/Ourplayers/mehransquare.png'
+CHRIS = 'images/Ourplayers/chrisP.png'
+KAREL = 'images/Ourplayers/karel.png'
+PYTHON = 'images/Ourplayers/python.jpg'
+BEEPER = 'images/ThisnThat/beeper.png'
 TATOO = 'images/Tatooine/vista.jpg'
 TATOO2 = 'images/Tatooine/desert.jpg'
 TATSAM = 'images/Tatooine/tatsample.png'
 DESTAT = 'images/Tatooine/desertat.png'
 DESTAT1 = 'images/Tatooine/desertatsam.png'
-BAGS = 'images/This n That/luggage.png'
+BAGS = 'images/ThisnThat/luggage.png'
 SPACE1 = 'images/Space/purplespace.jpg'
 SPACE = 'images/Space/bluespace.jpg'
 HYPER = 'images/Hyperspace/whitesace.jpg'
@@ -31,13 +31,13 @@ STANFORD1= 'images/Earth/stanford1.jpg'
 STANFORD2 ='images/Earth/stanford2.jpg'
 STAN = 'images/Earth/stanback.png'
 STAN1 = 'images/Earth/stanback1.png'
-RICH = 'images/Our players/karelcreator.png'
-GUIDO = 'images/Our players/guido.jpg'
+RICH = 'images/Ourplayers/karelcreator.png'
+GUIDO = 'images/Ourplayers/guido.jpg'
 MTRAIN = 'images/Earth/mt-rainier.jpg'
-XWING = 'images/X Wing/frontleftx.jpg'
-RXWING = 'images/X Wing/xwinglft.png'
-LXWING = 'images/X Wing/xwingrt.png'
-FXWING = 'images/X Wing/xwingfront.png'
+XWING = 'images/XWing/frontleftx.jpg'
+RXWING = 'images/XWing/xwinglft.png'
+LXWING = 'images/XWing/xwingrt.png'
+FXWING = 'images/XWing/xwingfront.png'
 CLOUD = 'images/Earth/cloudx.png'
 CLOUDR = 'images/Earth/cloudrx.png'
 MTRAINRG = 'images/Earth/mtrainrt.png'
@@ -46,8 +46,8 @@ MTRAINCLR = 'images/Earth/mtrainleftcl.png'
 MTRAINCEN = 'images/Earth/mtraincen.png'
 MEHSTAN = 'images/Earth/mehlarge.png'
 SIMBA = 'images/Our players/simba-sq.png'
-BURRITO = 'images/This n That/burrito.png'
-SABER = 'images/This n That/lightsaber.png'
+BURRITO = 'images/ThisnThat/burrito.png'
+SABER = 'images/ThisnThat/lightsaber.png'
 CHALK = 'images/Earth/chalkboard.jpeg'
 BBACK = 'images/Earth/blackback.png'
 BLACKB = 'images/Earth/blackboard.jpg'
@@ -1239,7 +1239,7 @@ def main():
     j16 = canvas.create_text(get_left_x(canvas, mehran_oval) + 30, get_top_y(canvas, mehran_oval) + 75, anchor='w',font='Courier 22', text='And our friend\nKarel is trained\nto be a gateway!')
     canvas.update()
     time.sleep(2)
-    canvas.moveto(beeper, 980, 590)
+    canvas.move(beeper, 980, 590)
     canvas.itemconfigure(beeper, state='normal')
     time.sleep(2)
     jump(canvas, karel)
@@ -1514,7 +1514,7 @@ def main():
 
     time.sleep(2)
 
-    john = greenscreen_python('images/Our players/john.png', 'images/This n That/heroback.png', 30, 50)
+    john = greenscreen_python('images/Ourplayers/john.png', 'images/ThisnThat/heroback.png', 30, 50)
     john_phimage = create_greened(john, 83, 85)
     john = canvas.create_image(505, 232, image = john_phimage)
     canvas.update()
